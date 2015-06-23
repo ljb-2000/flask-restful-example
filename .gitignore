@@ -13,6 +13,3 @@ build
 .settings/
 
 # My configurations:
-db.ini
-deploy_key_rsa
-data/logs/*
