@@ -51,7 +51,7 @@ class User(SurrogatePK, Model):
 
     @classmethod
     def get_by_phone(cls, phone):
-        return cls.query.get(phone)
+        return cls.query.filter_by(phone=phone).first()
 
     def __repr__(self):
         return '<User %s, %r, %r>' % (self.id, self.nickname, self.password)
